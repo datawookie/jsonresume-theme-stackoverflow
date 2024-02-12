@@ -27,19 +27,20 @@
         {{#if position}}
         <div class="position">{{position}}</div>
         {{/if}}
+        |
+        {{#if url}}
+        <span class="url">          
+          <a target="_blank" href="{{url}}"><span class="fas fa-external-link-alt"></span></a>
+        </span>
+        {{/if}} 
         <div class="company">{{name}}</div>
+        {{#if location}}
+        <span class="fas fa-map-marker-alt"></span>
+        <span class="location">{{location}}</span>
+        {{/if}}
       </header>
       {{/if}}
-
-      {{#if location}}
-      <span class="fas fa-map-marker-alt"></span>
-      <span class="location">{{location}}</span>
-      {{/if}}
-      {{#if url}}
-      <span class="url">
-        <span class="fas fa-external-link-alt"></span>
-        <a target="_blank" href="{{url}}">{{url}}</a>
-      </span> {{/if}} {{#if keywords.length}}
+      {{#if keywords.length}}
       <ul class="keywords">
         {{#each keywords}}
         <li>{{.}}</li>

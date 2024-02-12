@@ -34,32 +34,20 @@
           </div>
           {{/if}}
           {{#if area}}
-          <div class="area">
-            {{area}}
-          </div>
+          <div class="area">({{area}})</div>
           {{/if}}
           {{#if institution}}
+          | 
           <div class="institution">
             {{institution}}
           </div>
+          {{#if location}}
+          <span class="fas fa-map-marker-alt"></span>
+          <span class="location">{{location}}</span>
+          {{/if}}
           {{/if}}
         </div>
       </header>
-
-      {{#location}}
-      <span class="location">
-        <span class="fas fa-map-marker-alt"></span>
-        {{#if city}}
-        <span class="city">{{city}}</span>
-        {{/if}}
-        {{#if countryCode}}
-        <span class="countryCode">({{countryCode}})</span>
-        {{/if}}
-        {{#if region}}
-        <span class="region">{{region}}</span>
-        {{/if}}
-      </span>
-      {{/location}}
 
       {{#if courses.length}}
       <ul class="courses">

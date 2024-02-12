@@ -138,7 +138,7 @@ table {
 body,
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 13px;
+  font-size: 11px;
   color: #40484f;
   font-weight: 400;
   letter-spacing: 0;
@@ -343,13 +343,6 @@ section .location {
   font-weight: 600;
 }
 
-.company::before,
-.institution::before,
-.organization::before,
-.awarder::before {
-  content: "at ";
-}
-
 .company,
 .institution,
 .organization,
@@ -364,11 +357,6 @@ section .location {
   padding: 0.1em 0;
   color: #606d76;
   font-weight: 400;
-}
-
-.keywords,
-.courses {
-  margin: 0.5em 0;
 }
 
 .keywords li,
@@ -391,10 +379,6 @@ section .location {
 
 .highlights {
   margin: 1em 0 0 0;
-}
-
-.highlights > li > p {
-  margin-bottom: 0.5em;
 }
 
 .item {
@@ -593,10 +577,13 @@ section .location {
     margin: 0 auto;
   }
   .section header .date {
-    float: right;
     font-weight: 600;
-    color: #000;
   }
+}
+
+.section header .date {
+  float: right;
+  color: #000;
 }
 
 /****************
@@ -617,12 +604,6 @@ section .location {
   }
   .section > section:not(.main-summary) {
     margin-left: 1.67rem;
-  }
-  .company::before,
-  .institution::before,
-  .organization::before,
-  .awarder::before {
-    content: "| ";
   }
   .header-left {
     float: left;
@@ -656,12 +637,6 @@ section .location {
   }
   .item-count {
     display: none;
-  }
-  .company::before,
-  .institution::before,
-  .organization::before,
-  .awarder::before {
-    content: "at ";
   }
   .main-summary {
     padding: 0;
@@ -754,4 +729,16 @@ section .location {
   .fa-map-marker-alt:before {
     padding-left: 0.1em;
   }
+}
+
+li > p {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+#education > section.education-item {
+  margin-bottom: 0;
 }

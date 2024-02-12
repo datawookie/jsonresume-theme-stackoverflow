@@ -15,6 +15,12 @@
         {{#if name}}
         <div class="position">{{name}}</div>
         {{/if}}
+        {{#if url}}
+        <span class="website">
+          <span class="fas fa-external-link-alt"></span>
+          <a target="_blank" href="{{url}}">{{url}}</a>
+        </span>
+        {{/if}}
         {{#if startDate}}
         <div class="date">
           <span class="startDate">{{MY startDate}}</span>
@@ -26,28 +32,6 @@
         </div>
         {{/if}}
       </header>
-      {{/if}}
-      {{#location}}
-      <span class="location">
-      <span class="fas fa-map-marker-alt"></span>
-      {{#if city}}
-      <span class="city">{{city}},</span>
-      {{/if}}
-      {{#if countryCode}}
-      <span class="countryCode">({{countryCode}})</span>
-      {{/if}}
-      {{#if region}}
-      <span class="region">
-      {{region}}
-      </span>
-      {{/if}}
-      </span>
-      {{/location}}
-      {{#if url}}
-      <span class="website">
-        <span class="fas fa-external-link-alt"></span>
-        <a target="_blank" href="{{url}}">{{url}}</a>
-      </span>
       {{/if}}
       {{#if keywords.length}}
       <ul class="keywords">
