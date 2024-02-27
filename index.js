@@ -6,7 +6,7 @@ const HELPERS = join(__dirname, 'theme/hbs-helpers');
 
 const { birthDate } = require(join(HELPERS, 'birth-date.js'));
 const { dateHelpers } = require(join(HELPERS, 'date-helpers.js'));
-const { paragraphSplit } = require(join(HELPERS, 'paragraph-split.js'));
+const { markdownRender } = require(join(HELPERS, 'markdown-render.js'));
 const { toLowerCase } = require(join(HELPERS, 'to-lower-case.js'));
 const { spaceToDash } = require(join(HELPERS, 'space-to-dash.js'));
 
@@ -16,7 +16,7 @@ Handlebars.registerHelper('birthDate', birthDate);
 Handlebars.registerHelper('MY', MY);
 Handlebars.registerHelper('Y', Y);
 Handlebars.registerHelper('DMY', DMY);
-Handlebars.registerHelper('paragraphSplit', paragraphSplit);
+Handlebars.registerHelper('markdownRender', markdownRender);
 Handlebars.registerHelper('toLowerCase', toLowerCase);
 Handlebars.registerHelper('spaceToDash', spaceToDash);
 

@@ -1,7 +1,7 @@
 const { SafeString } = require('handlebars');
 const markdown = require('markdown-it')();
 
-const paragraphSplit = (text) => {  
+const markdownRender = (text) => {  
     if (text != null) {
         text = markdown.render(text);
     }
@@ -9,4 +9,4 @@ const paragraphSplit = (text) => {
     return new SafeString(text);
 };
 
-module.exports = { paragraphSplit };
+module.exports = { markdownRender };
