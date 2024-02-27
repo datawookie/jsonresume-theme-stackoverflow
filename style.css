@@ -742,3 +742,8 @@ li > p {
 #education > section.education-item {
   margin-bottom: 0;
 }
+
+.main-summary ul,
+.main-summary ul > li {
+    display: inline;
+}
