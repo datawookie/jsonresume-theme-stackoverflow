@@ -747,3 +747,10 @@ li > p {
 .main-summary ul > li {
     display: inline;
 }
+
+.main-summary p,
+.main-summary ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
