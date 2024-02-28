@@ -787,3 +787,16 @@ li > p {
 #skills .item .keywords {
   width: 20em;
 }
+
+#skills ul.keywords li {
+  font-size: 0.75rem;
+}
+
+#skills .level {
+  display: flex;
+  align-items: center;
+}
+
+#skills .bar {
+  margin-right: 10px;
+}
