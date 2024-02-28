@@ -782,3 +782,8 @@ li > p {
 #work .work-item {
   margin-bottom: 0;
 }
+
+#skills .item,
+#skills .item .keywords {
+  width: 20em;
+}
