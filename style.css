@@ -743,14 +743,42 @@ li > p {
   margin-bottom: 0;
 }
 
+.main-summary p,
 .main-summary ul,
 .main-summary ul > li {
     display: inline;
 }
 
 .main-summary p,
-.main-summary ul {
-  display: inline-block;
+.main-summary ul,
+.main-summary ul > li {
   margin: 0;
   padding: 0;
+}
+
+.main-summary ul {
+  list-style-type: none;
+}
+
+.main-summary {
+  display: flex;
+  align-items: center;
+}
+
+.main-summary ul > li::before {
+  content: '➤ ';
+  display: inline-block;
+  margin-right: 3px;
+}
+
+/* Since everything is now inline we need to enforce some linebreaks. */
+.main-summary p + p::before,
+.main-summary ul + p::before {
+  content: '';
+  display: block;
+  margin-top: 2px;
+}
+
+#work .work-item {
+  margin-bottom: 0;
 }
