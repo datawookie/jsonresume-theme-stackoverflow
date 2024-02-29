@@ -783,9 +783,17 @@ li > p {
   margin-bottom: 0;
 }
 
-#skills .item,
+#skills {
+  display: block;
+}
+
+#skills .item {
+  width: 100%;
+  padding-right: 0;
+}
+
 #skills .item .keywords {
-  width: 20em;
+  width: 100%;
 }
 
 #skills ul.keywords li {
