@@ -43,6 +43,8 @@ function render(resume) {
 
 const marginValue = '0.8 cm';
 const pdfRenderOptions = {
+  format: 'A4',
+  mediaType: 'print',
   margin: {
     top: marginValue,
     bottom: marginValue,
