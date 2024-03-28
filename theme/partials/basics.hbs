@@ -13,30 +13,16 @@
 		</div>
 		{{/if}}
 
-		{{#location}}
-		<span class="location">
-			{{#if address}}
-			<span class="address">{{address}},</span>
-			{{/if}}
-			{{#if postalCode}}
-			<span class="postalCode">{{postalCode}},</span>
-			{{/if}}
-			{{#if city}}
-			<span class="city">{{city}},</span>
-			{{/if}}
-			{{#if region}}
-			<span class="region">{{region}}</span>
-			{{/if}}
-			{{#if countryCode}}
-			<span class="countryCode">{{countryCode}}</span>
-			{{/if}}
-		</span>
-		{{/location}}
-
 		{{#birthDate birth}}
 		{{/birthDate}}
 
 		<div id="contact">
+      {{#if location}}
+      <div class="location">
+        <span class="fas fa-map-marker-alt"></span>
+        <span>{{location}}</span>
+      </div>
+      {{/if}}
 			{{#if website}}
 			<div class="website">
 				<span class="fas fa-external-link-alt"></span>
