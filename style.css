@@ -524,7 +524,24 @@ section .location {
 .level.master .bar::after,
 .level.native.speaker .bar::after {
   background: #08c5fd;
+}
+
+.level.beginner .bar::after {
   width: 2.5em;
+}
+
+.level.intermediate .bar::after {
+  width: 5em;
+}
+
+.level.advanced .bar::after,
+.level.fluent .bar::after {
+  width: 7.5em;
+}
+
+.level.master .bar::after,
+.level.native.speaker .bar::after {
+  width: 10em;
 }
 
 #references .item {
