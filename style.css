@@ -517,26 +517,14 @@ section .location {
   height: 5px;
 }
 
-.level.beginner .bar::after {
-  background: #eb5f51;
-  width: 2.5em;
-}
-
-.level.intermediate .bar::after {
-  background: #ffdf1f;
-  width: 5em;
-}
-
+.level.beginner .bar::after,
+.level.intermediate .bar::after,
 .level.advanced .bar::after,
-.level.fluent .bar::after {
-  background: #5cb85c;
-  width: 7.5em;
-}
-
+.level.fluent .bar::after,
 .level.master .bar::after,
 .level.native.speaker .bar::after {
-  background: #59c596;
-  width: 10em;
+  background: #08c5fd;
+  width: 2.5em;
 }
 
 #references .item {
