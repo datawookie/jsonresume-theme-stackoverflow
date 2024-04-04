@@ -30,29 +30,28 @@
   				<a class="hide-href-print" href="tel:{{phone}}">{{phone}}</a>
   			</div>
   			{{/if}}
+        {{#if profiles.length}}
+        <div id="profiles">
+          {{#each profiles}}
+          <div class="item">
+            {{#if network}}
+            <div class="username">
+              <span class="fab fa-{{spaceToDash network}} {{spaceToDash network}} social"></span>
+              {{#if url}}
+              <span class="url">
+                <a target="_blank" href="{{url}}">{{username}}</a>
+              </span>
+              {{else}}
+              <span>{{username}}</span>
+              {{/if}}
+            </div>
+            {{/if}}
+          </div>
+          {{/each}}
+        </div>
+		    {{/if}}
   		</div>
     </div>
-
-		{{#if profiles.length}}
-		<div id="profiles">
-			{{#each profiles}}
-			<div class="item">
-				{{#if network}}
-				<div class="username">
-					<span class="fab fa-{{spaceToDash network}} {{spaceToDash network}} social"></span>
-					{{#if url}}
-					<span class="url">
-						<a target="_blank" href="{{url}}">{{username}}</a>
-					</span>
-					{{else}}
-					<span>{{username}}</span>
-					{{/if}}
-				</div>
-				{{/if}}
-			</div>
-			{{/each}}
-		</div>
-		{{/if}}
 	</header>
 
 	{{#if summary}}
