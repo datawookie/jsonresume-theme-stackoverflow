@@ -204,6 +204,16 @@ section .location {
   font-weight: 700;
 }
 
+#person {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#name {
+  flex-grow: 1;
+}
+
 #contact {
   margin-top: 0.5rem;
 }
