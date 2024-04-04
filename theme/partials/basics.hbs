@@ -33,9 +33,9 @@
         {{#if profiles.length}}
         <div id="profiles">
           {{#each profiles}}
-          <div class="item">
+          <span class="item">
             {{#if network}}
-            <div class="username">
+            <span class="username">
               <span class="fab fa-{{spaceToDash network}} {{spaceToDash network}} social"></span>
               {{#if url}}
               <span class="url">
@@ -44,9 +44,9 @@
               {{else}}
               <span>{{username}}</span>
               {{/if}}
-            </div>
+            </span>
             {{/if}}
-          </div>
+          </span>
           {{/each}}
         </div>
 		    {{/if}}
