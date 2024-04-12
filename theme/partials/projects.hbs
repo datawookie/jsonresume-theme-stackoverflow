@@ -40,18 +40,16 @@
         {{/each}}
       </ul>
       {{/if}}
-      <div class="item">
-        {{#if summary}}
-          <div class="summary">{{markdownRender summary}}</div>
-        {{/if}}
-        {{#if highlights.length}}
-        <ul class="highlights">
-          {{#each highlights}}
-            <li>{{markdownRender .}}</li>
-          {{/each}}
-        </ul>
-        {{/if}}
-      </div>
+      {{#if summary}}
+        <p class="summary">{{markdownRender summary}}</p>
+      {{/if}}
+      {{#if highlights.length}}
+      <ul class="highlights">
+        {{#each highlights}}
+          <li>{{markdownRender .}}</li>
+        {{/each}}
+      </ul>
+      {{/if}}
     </section>
     {{/each}}
   </section>
