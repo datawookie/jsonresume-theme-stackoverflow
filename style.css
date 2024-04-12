@@ -723,3 +723,7 @@ li > p {
 #projects .summary > p {
   display: inline;
 }
+
+#projects ul.keywords {
+  display: inline-block;
+}
