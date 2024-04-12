@@ -715,3 +715,7 @@ li > p {
 #skills .bar {
   margin-right: 10px;
 }
+
+#projects .project-item ul.keywords + p {
+  display: inline;
+}
