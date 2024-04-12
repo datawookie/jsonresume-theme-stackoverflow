@@ -716,6 +716,10 @@ li > p {
   margin-right: 10px;
 }
 
-#projects .project-item ul.keywords + p {
+#projects .project-item ul.keywords + .summary {
+  display: inline;
+}
+
+#projects .summary > p {
   display: inline;
 }
