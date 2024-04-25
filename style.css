@@ -309,7 +309,6 @@ section .location {
 }
 
 .section > section > header {
-  font-size: 1.38rem;
   position: relative;
   margin-top: 0.7em;
 }
