@@ -726,3 +726,7 @@ li > p {
 #projects ul.keywords {
   display: inline-block;
 }
+
+#education {
+  page-break-inside: avoid;
+}
