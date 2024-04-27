@@ -687,6 +687,7 @@ li > p {
 
 #work .work-item {
   margin-bottom: 0;
+  page-break-inside: avoid;
 }
 
 #skills {
