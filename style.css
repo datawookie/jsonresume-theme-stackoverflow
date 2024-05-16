@@ -276,6 +276,7 @@ section .location {
 .main-summary p > img {
   vertical-align: middle;
   height: 12px;
+  margin-bottom: 2px;
 }
 
 .section-title {
