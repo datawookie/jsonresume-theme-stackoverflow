@@ -273,6 +273,11 @@ section .location {
   margin: 0;
 }
 
+.main-summary p > img {
+  vertical-align: middle;
+  height: 12px;
+}
+
 .section-title {
   display: inline-block;
   background: #fff;
