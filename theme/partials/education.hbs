@@ -10,6 +10,13 @@
       <label for="education-item-{{@index}}"></label>
     {{/if}}
     <header class="clear">
+      <div class="date">
+        {{#if endDate}}
+        <span class="endDate">
+        - {{Y endDate}}
+        </span>
+        {{/if}}
+      </div>
       <div class="header-left">
         {{#if studyType}}
         <div class="studyType">
